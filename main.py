@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
         # Überprüfen, ob die Antwort mit einem Semikolon beginnt
         if not cards.startswith(";"):
-            # Antwort in die Datei /Users/julianheines/Downloads/anki.csv schreiben
+            # Antwort in die Datei your_file_name.csv schreiben
             with open("your_file_name.csv", 'a') as f:
                 f.write(cards)
             print("Geschrieben")
