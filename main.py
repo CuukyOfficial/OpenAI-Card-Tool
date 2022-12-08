@@ -22,7 +22,7 @@ def get_input():
 
 if __name__ == '__main__':
     # API-Key für OpenAI setzen
-    openai.api_key = ""
+    openai.api_key = "your api key"
 
     # Vorlage für die Prompt-Nachricht
     prompt_template = "Erstelle mir bitte deutsche Karteikarten im csv Dateiformat. Das bedeutet, dass auf jeder " \
@@ -63,6 +63,6 @@ if __name__ == '__main__':
         # Überprüfen, ob die Antwort mit einem Semikolon beginnt
         if not cards.startswith(";"):
             # Antwort in die Datei /Users/julianheines/Downloads/anki.csv schreiben
-            with open("/Users/julianheines/Downloads/anki.csv", 'a') as f:
+            with open("your_file_name.csv", 'a') as f:
                 f.write(cards)
             print("Geschrieben")
